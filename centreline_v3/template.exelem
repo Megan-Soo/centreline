@@ -1,0 +1,151 @@
+ Group name: 1d_tree
+ Shape. Dimension=1, line
+ #Scale factor sets=1
+ l.Lagrange, #Scale factors=2
+ #Nodes=2
+ #Fields=1
+ 1) coordinates, coordinate, rectangular cartesian, #Components=3
+ x. l.Lagrange, no modify, standard node based.
+   #Nodes=2
+   1. #Values=1
+     Value labels: value
+     Scale factor indices: 1
+   2. #Values=1
+     Value labels: value
+     Scale factor indices: 2
+ y. l.Lagrange, no modify, standard node based.
+   #Nodes=2
+   1. #Values=1
+     Value labels: value
+     Scale factor indices: 1
+   2. #Values=1
+     Value labels: value
+     Scale factor indices: 2
+ z. l.Lagrange, no modify, standard node based.
+   #Nodes=2
+   1. #Values=1
+     Value labels: value
+     Scale factor indices: 1
+   2. #Values=1
+     Value labels: value
+     Scale factor indices: 2
+ Element: 1 0 0
+ Nodes:
+ 1 2
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 2 0 0
+ Nodes:
+ 2 3
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 3 0 0
+ Nodes:
+ 3 4
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 4 0 0
+ Nodes:
+ 4 5
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 5 0 0
+ Nodes:
+ 5 6
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 6 0 0
+ Nodes:
+ 6 7
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 7 0 0
+ Nodes:
+ 7 8
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 8 0 0
+ Nodes:
+ 5 9
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 9 0 0
+ Nodes:
+ 9 10
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 10 0 0
+ Nodes:
+ 10 11
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 11 0 0
+ Nodes:
+ 8 12
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 12 0 0
+ Nodes:
+ 8 13
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 13 0 0
+ Nodes:
+ 12 14
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 14 0 0
+ Nodes:
+ 12 15
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 15 0 0
+ Nodes:
+ 11 16
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 16 0 0
+ Nodes:
+ 11 17
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 17 0 0
+ Nodes:
+ 14 18
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 18 0 0
+ Nodes:
+ 14 19
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 19 0 0
+ Nodes:
+ 15 20
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 20 0 0
+ Nodes:
+ 13 21
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 21 0 0
+ Nodes:
+ 16 22
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 22 0 0
+ Nodes:
+ 16 23
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 23 0 0
+ Nodes:
+ 17 24
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
+ Element: 24 0 0
+ Nodes:
+ 17 25
+ Scale factors:
+  1.000000000000000e+00  1.000000000000000e+00
