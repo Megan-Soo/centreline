@@ -69,17 +69,21 @@ def onclick(event):
     global ix, iy
     ix, iy = event.xdata, event.ydata
     z = tracker.ind
-    print(f'x = {ix}, y = {iy}, z = {z}')
+    # print(f'x = {ix}, y = {iy}, z = {z}') # for axial view
+    print(f'x = {ix}, y = {z}, z = {iy}') # for coronal view
 
     global coords
     # coords.append((ix, iy))
-    coords.append((ix, iy, z))
+    # coords.append((ix, iy, z)) # for axial view
+    coords.append((ix, z, iy)) # for coronal view
 
 
     # Change values of selected pixel and its neighbours
     x = int(ix) #+ x_offset
     y = int(iy) #+ y_offset
-    X[z][(y-2):(y+2),(x-2):(x+2)] = 1300 # max value in the image stack is 1301
+    z = int(z)
+    # X[z][(y-2):(y+2),(x-2):(x+2)] = 1300 # for axial view
+    X[y][(z - 2):(z + 2), (x - 2):(x + 2)] = 1300 # for coronal view
 
     return coords
 
