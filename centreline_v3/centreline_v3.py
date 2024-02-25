@@ -2,6 +2,7 @@
 import SimpleITK as sitk
 import os
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import argparse
 import numpy as np
 from tkinter import *
@@ -93,7 +94,7 @@ def onclick(event):
 class IndexTracker(object):
     def __init__(self, ax, X):
         self.ax = ax
-        ax.set_title('use scroll wheel to navigate images')
+        ax.set_title('Use scroll wheel to navigate images\nEnsure trachea nodes selected above lung nodes', loc='center', wrap=True)
 
         self.X = X
         ## When changing views, rmb to change here and in update()
@@ -124,10 +125,23 @@ class IndexTracker(object):
 
 
 # open a figure window
-fig, ax = plt.subplots(1, 1)
+fig, (ax1,ax2) = plt.subplots(1, 2, width_ratios=[3,1])
 
+# plot reference upper airway template
+ref_img = mpimg.imread('25nodes_template.png')
+ax2.set_title('Reference upper airway template\nSelect the corresponding locations of the red nodes', loc='center', wrap=True)
+ax2.set_ylabel('Right')
+ax2.set_yticklabels([])
+ax2.set_yticks([])
+ax2.set_xticklabels([])
+ax2.set_xticks([])
+secax = ax2.secondary_yaxis('right')
+secax.set_ylabel('Left')
+secax.set_yticklabels([])
+secax.set_yticks([])
+ax2.imshow(ref_img)
 
-tracker = IndexTracker(ax, X) # Show plot of 2D slice
+tracker = IndexTracker(ax1, X) # Show plot of 2D slice
 
 
 fig.canvas.mpl_connect('scroll_event', tracker.onscroll) # connect plot to scrollable slice viewer
